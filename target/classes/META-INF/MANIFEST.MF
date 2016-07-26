@@ -1,0 +1,12 @@
+Manifest-Version: 1.0
+Implementation-Title: apollo
+Implementation-Version: 1.0.0
+Built-By: allen
+Specification-Vendor: KNIGHT
+Specification-Title: apollo
+Implementation-Vendor-Id: com.github.adanac.util
+Build-Jdk: 1.8.0_60
+Specification-Version: 1.0.0
+Created-By: Maven Integration for Eclipse
+Implementation-Vendor: KNIGHT
+
