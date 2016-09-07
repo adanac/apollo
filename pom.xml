@@ -119,6 +119,13 @@
             <artifactId>junit</artifactId>
             <scope>test</scope>
         </dependency>
+        
+        <dependency>
+		    <groupId>commons-beanutils</groupId>
+		    <artifactId>commons-beanutils</artifactId>
+		    <version>1.9.2</version>
+		</dependency>
+        
 
     </dependencies>
 
@@ -401,6 +408,7 @@
         <profile>
             <id>release</id>
             <distributionManagement>
+            	<!--  
                 <snapshotRepository>
                     <id>nexus-release</id>
                     <url>https://oss.sonatype.org/content/repositories/snapshots/</url>
@@ -409,6 +417,17 @@
                     <id>nexus-release</id>
                     <url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
                 </repository>
+                -->
+                <repository>
+					<id>adanac-nexus-releases</id>
+					<name>adanac Release Repository</name>
+					<url>http://localhost:8081/nexus/content/repositories/releases/</url>
+				</repository>
+				<snapshotRepository>
+					<id>adanac-nexus-snapshots</id>
+					<name>adanac Snapshot Repository</name>
+					<url>http://localhost:8081/nexus/content/repositories/snapshots/</url>
+				</snapshotRepository>
             </distributionManagement>
             <build>
                 <plugins>
